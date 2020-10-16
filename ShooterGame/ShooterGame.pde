@@ -329,9 +329,11 @@ void draw(){
          }
          else{
            // when count > 3 , zombie has died
-           zombies.remove(zombieIndex);
-           removeBulletFlag = true;
+           //zombies.remove(zombieIndex);
+           //removeBulletFlag = true;
+           //zombies.get(zombieIndex).freeze(); --> padding and freeze at old position
          }
+         removeBulletFlag = true;
        }
     }
     if (removeBulletFlag){
